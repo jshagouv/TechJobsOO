@@ -20,8 +20,8 @@ namespace TechJobs.Controllers
         public IActionResult Index(int id)
         {
             // TODO #1 - get the Job with the given ID and pass it into the view
-            Job idJob = jobData.Find(id);
-            return View(idJob);
+            Job jobById = jobData.Find(id);
+            return View(jobById);
         }
 
         public IActionResult New()
